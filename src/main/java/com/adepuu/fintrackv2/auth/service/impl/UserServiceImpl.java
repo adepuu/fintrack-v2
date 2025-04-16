@@ -56,7 +56,7 @@ public class UserServiceImpl implements UserService {
 
     UserProvider userProvider = new UserProvider();
     userProvider.setUserId(newlyInsertedUserID);
-    userProvider.setProvider(LoginProviders.GOOGLE);
+    userProvider.setProvider(LoginProviders.LOCAL);
     userProvider.setProviderUserId(newlyInsertedUserID.toString());
 
     userProviderRepository.saveUserProvider(userProvider);
